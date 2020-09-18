@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/4d03072e1c.js"></script>
+<link rel="stylesheet" href="CSS/styles.css">
+<body>
+
+<form id="regForm" action="/action_page.php">
+  <div class="tab">
+    <div>
+      <div>
+        <h4>Hi, just 3 simple steps to get you started & someone from our awesome team will sort it all out for you!</h4>  
+        <h2 class="heading1">
+          CHOOSE YOUR CAMPAIGN OBJECTIVE
+        </h2>
+        <h3 class="heading2">
+          (You can select more than one objective)
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Brand Awareness" oninput="this.className = ''" onclick="highlight(this)" name="BrandAwareness" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+          <input type="button" value="Reach and Views" oninput="this.className = ''" onclick="highlight(this)"  name="ReachAndViews" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Create Content" oninput="this.className = ''" onclick="highlight(this)"  name="CreateContent" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Product Sampling" oninput="this.className = ''" onclick="highlight(this)" name="ProductSampling" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Sales Or Downloads" oninput="this.className = ''" onclick="highlight(this)" name="SalesOrDownloads" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Event Or Contest participation" oninput="this.className = ''"onclick="highlight(this)"  name="EventOrContestParticipation" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Community Building" oninput="this.className = ''" onclick="highlight(this)" name="CommunityBuilding" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Research & Feedback" oninput="this.className = ''" onclick="highlight(this)" name="ResearchandFeedback" class="input-page1">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <input type="button" value="Drive Traffic" oninput="this.className = ''" onclick="highlight(this)" name="DriveTraffic" class="input-page1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="margin-top: 1rem; font-family: 'Courier New', Courier, monospace; font-size: small;">
+        *Please save your details to Continue*
+      </p>
+    </div>
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        <h1 class="heading1">
+          SELECT SOCIAL MEDIA PLATFORMS
+        </h1>
+        <h3 class="heading2">
+          (Our influencers are top users across all social media platforms. Select the platforms that you would like to activate for your campaign)
+        </h3>
+      </div>
+    </div><br>
+    <div class="container-social">
+      <div class="one">
+        <ul>
+          <li>
+            <img class="social-media display"  src="social-media/fb.jpg" alt="Facebook">
+          </li>
+          <li>
+            <img class="social-media display" src="social-media/firework.png" alt="firework">
+          </li>
+          <li>
+            <img class="social-media display" src="social-media/globe.png" alt="blog">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/insta.jpg" alt="instagram">
+          </li>
+          <li>
+            <img class="social-media display" src="social-media/helo.png" alt="helo">
+          </li>
+          <li>
+            <img class="social-media display" src="social-media/likee.png" alt="likee">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/linkedIn.png" alt="linkedIn">        
+          </li>
+        </ul>
+      </div>
+      <div class="two">
+        <ul>
+          <li>
+            <img class="social-media display"  src="social-media/pinterest.png" alt="pinterest">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/snapchat.jpg" alt="snapchat">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/tiktokLogo.png" alt="tiktok">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/trell.png" alt="trell">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/tweet.jpg" alt="tweet">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/whatsapp.png" alt="whatsapp">
+          </li>
+          <li>
+            <img class="social-media display"  src="social-media/youtube.jpg" alt="youtube">        
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <div>
+        <h1 class="heading1">
+          SELECT INFLUENCER TYPE
+        </h1>
+        <h3 class="heading2">
+          Discover the most relevant influencers as per their standing on the popularity pyramid.
+        </h3>
+      </div><br>
+    </div>
+    <div class="row container1">
+
+      <div class="col-xs-12 col-sm-3" onclick="coloring(this)">
+        <p class="fontstyle1">
+          MEGA [500K+]
+        </p>
+        <p class="fontstyle2">
+          Celebrities and famous personalities
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-3" onclick="coloring(this)">
+        <p class="fontstyle1">
+          MACRO [50K to 500K]
+        </p>
+        <p class="fontstyle2">
+          Popular social media stars
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-3" onclick="coloring(this)">
+        <p class="fontstyle1">
+          MICRO [5k to 50K]
+        </p>
+        <p class="fontstyle2">
+          Up & coming digital content creators
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-3" onclick="coloring(this)">
+        <p class="fontstyle1">
+          NANO [<5K]</p>
+        <p class="fontstyle2">
+          Emerging influencers who tend to be student, working professionals & parents
+        </p>
+      </div>
+    </div>
+    <div>
+      <p style="margin-top: 2rem; font-family: 'Courier New', Courier, monospace; font-size: small;">
+        *Please save your details to Continue*
+      </p>
+    </div>
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        <h1 class="heading1">
+          PLEASE ENTER THE CAMPAIGN DETAILS
+        </h1>
+        <h3 class="heading2">
+          (Enter the details that matter and will help us identify the right influencers for you.)
+        </h3>
+      </div>
+    </div>
+
+    <div>
+      <div class="row">
+        <div class="col-xs-12">
+          <input type="text" placeholder="Brand, agency or product" class="inputTags" value="">
+        </div>
+        <div class="col-xs-12">
+          <input type="text" placeholder="Campaign name or hashtag" class="inputTags" value="">
+        </div>
+        
+        <div id="listInfluencer" class="col-xs-12 dropdown-check-list1 m-20" tabindex="100"><br>
+          <span class="anchor1">Type of Influencers you would like</span>
+
+          <div id="selectedItem">
+            <!-- The contents selected from the checkbox gets added here -->
+          </div>
+          
+          <ul class="items1">
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes" />
+            </div>
+            <div>
+              <label class="checkName">Arts</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Automobile</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Beauty & Makeup</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes" />
+            </div>
+            <div>
+              <label class="checkName">Business & Statup</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes" />
+            </div>
+            <div>
+              <label class="checkName">Education & Career</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Fashion</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Fitness & Health</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Food & Beverages</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Lifestyle</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Marketing & Social Media</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Movies, TV & Entertainment</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Music & Dance</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Photography & Videography</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Society & Politics</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Sports</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes" />
+            </div>
+            <div>
+              <label class="checkName">Technology</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="checkBoxes"/>
+            </div>
+            <div>
+              <label class="checkName">Travel</label>
+            </div>
+          </ul>
+        </div>
+        <div class="col-xs-12"><br>
+          <input type="text" placeholder="Target Cities" class="inputTags" value="">
+        </div>
+        <div class="col-xs-12">
+          <input type="text" placeholder="Target Audience's Age" class="inputTags" value="">
+        </div>
+
+        
+        <div id="listTarget" class="col-xs-12 dropdown-check-list2 m-20" tabindex="100"><br>
+          <span class="anchor2">Target Audience's Gender</span>
+          <div id="targetDisplay">
+            <!-- The contents selected from the checkbox gets added here -->
+          </div>
+          
+          <ul class="items2">
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="targetBox"/>
+            </div>
+            <div>
+              <label class="targetName">Male</label>
+            </div>              
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="targetBox"/>
+            </div>
+            <div>
+              <label class="targetName">Female</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="targetBox"/>
+            </div>
+            <div>
+              <label class="targetName">Other</label>
+            </div>
+            <div class="col-xs-12 col-sm-1">
+              <input type="checkbox" class="targetBox"/>
+            </div>
+            <div>
+              <label class="targetName">All</label>
+            </div>
+          </ul> 
+        </div>
+        <div class="col-xs-12">
+          <div class="col-xs-12"><br>
+
+            <div class="m-20"  style="margin-top: 10px;">
+              <p class="sans-serif">Campaign Description</p>
+              <textarea name="campaignDescription" id="" cols="30" rows="5"></textarea>
+            </div>
+
+          </div>
+        </div>
+        </div>
+        <div class="col-xs-12"><br>
+          <div class="m-20">
+            <p class="sans-serif">Deliverables</p>
+            <textarea name="deliverables" id="" cols="30" rows="5"></textarea>
+          </div>
+          <br>
+        </div>
+
+      </div>
+    
+
+      <h4 class="m-20 reward" style="margin-left: 20px">Reward</h4>
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-3 m-20">
+          <input type="button" onclick="splash(this)" value="Paid" oninput="this.className = ''" name="paid" class="reward-input">
+        </div>
+        <div class="col-xs-12 col-sm-3 m-20">
+          <input type="button" onclick="splash(this)"  value="Product" oninput="this.className = ''" name="product" class="reward-input">
+        </div>
+        <div class="col-xs-12 col-sm-3 m-20">
+          <input type="button" onclick="splash(this)" value="Experience" oninput="this.className = ''" name="experience" class="reward-input">
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-xs-12">
+          <input type="text" placeholder="Enter approx budget, product or experience details" class="inputTags" value="">
+        </div>
+      </div>
+      <div>
+        <p style="margin-top: 2rem; font-family: 'Courier New', Courier, monospace; font-size: small;">
+          *Please save your details to Continue*
+        </p>
+      </div>
+    </div><br>
+    
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        <h1 class="heading1">Review your campaign</h1>
+      </div>
+    </div>
+    <br><br><br>
+    <div>
+      
+      <h1 class="text-center">Brand, Agency or Product</h1>
+      <h2 class="text-center">Campaign Name or Hastag</h2>
+      
+      <br><br>
+    
+      <h3 class="review-font">Influencer Details</h3>
+
+      <p class="detail-font">Category:</p>
+      <p class="detail-font">Age:</p>
+      <p class="detail-font">Location:</p>
+
+      <div style="margin-top: -91.5px; margin-left: 400px;">
+        <p class="detail-font">Type:</p>
+      <p class="detail-font">Gender:</p>
+      </div>
+    </div><br>
+    <hr>
+    <br><br><br><br><br><br>
+    <div>
+      <p class="review-font">
+        Deliverables
+      </p>
+    </div>
+    <br><br>
+    <div>
+      <p class="review-font">
+        Campaign Budget
+      </p>
+    </div>
+    <br><br>
+    <div>
+      <p class="review-font">
+        Rewards
+      </p>
+    </div>
+    
+
+
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        <h1 class="heading1">
+          Almost done! How do we get in touch with you?
+        </h1>
+      </div>
+    </div><br><br>
+    <p class="heading2 m-20" style="color:#404040;font-weight: 400; font-size: 28px;">Contact Information</p>
+    <div>
+      <div style="background-color: white; margin-left: 20px;">
+        <div>
+          <i class="fa fa-user icon"></i>
+          <input placeholder="Contact Name" class="form-input">
+        </div><br>
+        <div>
+          <i class="fa fa-phone icon"></i>
+          <input type="text" placeholder="Phone Number" title="Error Message" pattern="[1-9]{1}[0-9]{9}" class="form-input">
+        </div><br>
+        <div>
+          <i class="fa fa-envelope icon"></i>
+          <input type="email" placeholder="Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="form-input">
+        </div><br>
+        <div>
+          <i class="fa fa-building icon"></i>
+          <input type="text" placeholder="Company name" class="form-input">
+        </div><br>
+        <div>
+          <i class="fa fa-id-card icon"></i>
+          <input type="text" placeholder="Your Designation"  class="form-input">
+        </div><br>
+        <div>
+          <i class="fa fa-id-card icon"></i>
+          <!-- <i class="fa fa-rupee-sign icon"></i> -->
+          <select aria-placeholder="Influencer Marketing Budget" id="budget"> 
+            <option value="" disabled selected><b>Influencer Marketing Budget</b></option>
+            <option value="2L to 5L"><b>2L to 5L</b></option>
+            <option value="5L to 10L"><b>5L to 10L</b></option>
+            <option value="10L to 20L"><b>10L to 20L</b></option>
+            <option value="20L to 50L"><b>20L to 50L</b></option>
+            <option value="All">All</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<br><br><br><br>
+  <div style="float:left;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Go to previous step</button>
+  </div>
+  <div style="margin:7px; float:right;">
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Continue</button>
+  </div>
+  <div style="margin:7px; float:right;">
+    <button type="button" id="saveBtn" onclick="enableNxt()">Save your Details</button>
+  </div>
+  
+
+<br><br>
+
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+<script src="JS/script.js"></script>
+</body>
+
+</html>

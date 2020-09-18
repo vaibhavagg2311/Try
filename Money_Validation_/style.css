@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.account>ul {
+    padding-inline-start: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentDetails {
+    align-self: center;
+}
+
+.paymentMethods>ul>li {
+    min-width: 150px;
+    padding: 12px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.paymentMethods>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.card {
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.card h5 {
+    align-self: center;
+}
+
+.accountDetails {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.account {
+    min-width: 40%;
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.removeAccount {
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.kyc {
+    background-color: #ffc;
+    border-left: 6px solid #ffeb3b;
+    margin-left: -17px;
+    width: 113%!important;
+}
+
+.form-group input {
+    width: 15rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+
+.form-group input:focus {
+    box-shadow: none;
+    border-bottom: 2px solid #4ad8d8;
+    transition: transform 0.3s ease
+}
+
+.is-invalid:focus {
+    box-shadow: none!important;
+}

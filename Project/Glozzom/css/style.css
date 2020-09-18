@@ -1,0 +1,99 @@
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.navbar .nav-link {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+.navbar .nav-link.active {
+	border-left: #fff 3px solid;
+}
+.carousel-item {
+	height: 400px;
+}
+.carousel-img-1 {
+	background: url(../img/image1.jpg);
+	background-size: cover; 
+}
+.carousel-img-2 {
+	background: url(../img/image2.jpg);
+	background-size: cover; 
+}
+.carousel-img-3 {
+	background: url(../img/image3.jpg);
+	background-size: cover; 
+}
+#home-heading {
+	position: relative;
+	background: url(../img/lights.jpg);
+	min-height: 200px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #fff;
+}
+#home-heading .dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+}
+#video-play {
+	position: relative;
+	background: url(../img/media.jpg);
+	min-height: 200px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0 -300px;
+	text-align: center;
+	color: #fff;
+}
+#video-play a {
+	color: #fff;
+}
+#video-play .dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+}
+#page-header {
+	height: 200px;
+	background: url(../img/image1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0 -360px;
+	color: #fff;
+	border-bottom: 1px solid #eee;
+	padding-top: 50px;
+
+}
+.about-img {
+	margin-top: -50px;
+	margin-left: 60px;
+}
+#faq .card {
+	border: #444;
+}
+#faq a {
+	text-decoration: none;
+	color: #fff;
+}
+#faq .card-header, #faq .card-body {
+	background-color: #333;
+}
+#main-footer {
+	background-color: #000;
+	color: #fff;
+}

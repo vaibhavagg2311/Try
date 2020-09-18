@@ -1,0 +1,880 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+
+    .main
+    {   
+        //background-color: blue;
+        padding: 50px;
+
+        .navbar
+        {
+            position: absolute;
+            top:0;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            background-color: red;
+        }
+        .container
+        {
+            display: flex;
+            padding: 0 30px;
+            //background-color: green;
+
+            .field
+            {   
+                padding: 0 10px;
+                z-index: 1;
+                img
+                {
+                    margin: -5px 0 0 0;
+                }
+                span
+                {
+                    font-weight: bold;
+                    position: absolute;
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+
+            .bulb1
+            {
+                
+                img
+                {
+                    height: 80px;
+                    width: 55px;
+                    margin: -22px 0 0 0;
+                }
+                    .line
+                {
+                    padding:10em 0 0 0; 
+                    margin: 0 0 0 25px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb1;
+                    animation-duration: 1s ;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 20px 0 0 0 ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                }      
+              
+                
+            }
+
+            .bulb2
+            {
+                
+                img
+                {
+                    height: 120px;
+                    width: 80px;
+                    margin: -52px 0 0 -12px ;
+                }
+                .line
+                {
+                    padding:20em 0 0 0; 
+                    margin: 0 0 0 35px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb2;
+                    animation-duration: 1.3s ;
+                   // animation-delay: .7s;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 50px 0 0 10px ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    
+                    
+                }      
+                
+            }
+            .bulb3
+            { 
+                img
+                {
+                    height: 90px;
+                    width: 70px;
+                    margin: -37px 0 0 -9px;
+                }
+                .line
+                {
+                    padding:12em 0 0 0; 
+                    margin: 0 0 0 30px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb3;
+                    animation-duration: 1.7s ;
+                    //animation-delay: 1.6s;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 35px 0 0 7px ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    
+                    
+                }      
+            }
+            .bulb4
+            {
+                img
+                {
+                    height: 140px;
+                    width: 100px;
+                    margin: -71px 0 0 -22px;
+                }
+                .line
+                {
+                    padding:25em 0 0 0; 
+                    margin: 0 0 0 44px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb4;
+                    animation-duration: 2s ;
+                    //animation-delay: 2.2s;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 70px 0 0 20px ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    
+                    span
+                    {
+                        margin-left: -25px;
+                    }
+                    
+                }      
+                
+            }
+            .bulb5
+            {
+                img
+                {
+                    height: 80px;
+                    width: 55px;
+                    margin: -28px 0 0 -1px;
+                }
+                .line
+                {
+                    padding:19em 0 0 0; 
+                    margin: 0 0 0 30px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb5;
+                    animation-duration: 2.2s ;
+                    //animation-delay: 2.6s;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 25px 0 0 7px ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    
+                    
+                }      
+                
+            } 
+            .bulb6
+            {
+                img
+                {
+                    height: 80px;
+                    width: 55px;
+                    margin: -22px 0 0 0;
+                }
+                    .line
+                {
+                    padding:10em 0 0 0; 
+                    margin: 0 0 0 25px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb6;
+                    animation-duration: 1.1s ;
+                    //animation-delay: 2.7s;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 20px 0 0 0 ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                     
+                    span{
+                        margin-left: 12px;
+                    }
+                    
+                }      
+                
+            }
+            .bulb7
+            {
+                    img
+                {
+                    height: 90px;
+                    width: 70px;
+                    margin: -35px 0 0 -7px;
+                }
+                    .line
+                {
+                    padding:19em 0 0 0; 
+                    margin: 0 0 0 31px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb7;
+                    animation-duration: 1.5s ;
+                    //animation-delay: 3.2s;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 30px 0 0 7px ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    
+                    span
+                    {
+                        margin-left: -12px; 
+                    }
+                }      
+                
+            }
+            .bulb8
+            {
+                img
+                {
+                    height: 80px;
+                    width: 55px;
+                    margin: -22px 0 0 0;
+                }
+                    .line
+                {
+                    padding:10em 0 0 0; 
+                    margin: 0 0 0 25px;
+                    position: relative;
+                    width: 12%;
+                    background-color: black;
+                    animation-name: bulb8;
+                    animation-duration: 1.1s ;
+                    //animation-delay: 3.5s;
+                    animation-timing-function: linear;
+                }
+                .circle
+                {
+                    display: block;
+                    margin: 20px 0 0 0 ;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    
+                    span {
+                        margin-left: 8px;
+                    }
+                    
+                }      
+                
+            }
+                .bubble1
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble1::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid  rgb(48, 45, 45) ;
+                    transform: rotate(83deg);
+                    margin: 3.1em 0 0 -3.4em;
+                    opacity: .99;
+
+                }
+                .bubble1 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    z-index: 3;
+                    margin: 7em 0 0 -10em;
+                    display: flex;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 44vh;
+                    width: 44vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble1 .description span 
+                {
+                    z-index: 999;
+                    opacity: 1;
+                }
+                .bubble1 .description span b
+                {
+                    color: yellow;
+                }
+                .bubble1::before {
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-bottom: 100px solid red;
+                  }
+
+                .bubble2
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble2::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid rgb(48, 45, 45);
+                    transform: rotate(27deg);
+                    margin: 15em 0 0 -4px;
+                    opacity: .95;
+
+                }
+                .bubble2 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    margin: 12em 0 0 3em;
+                    display: flex;
+                    z-index: 3;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 43vh;
+                    width: 43vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble2 .description span 
+                {
+                    z-index: 3;
+                    opacity: 1;
+                }
+                .bubble2 .description span b
+                {
+                    color: yellow;
+                }
+
+                .bubble3
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble3::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid rgb(48, 45, 45);
+                    transform: rotate(30deg);
+                    margin: 2.3em 0 0 -5.5px;
+                    opacity: .95;
+
+                }
+                .bubble3 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    z-index: 3;
+                    margin: 0 0 0 2.5em;
+                    display: flex;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 44vh;
+                    width: 44vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble3 .description span 
+                {
+                    z-index: 3;
+                    opacity: 1;
+                }
+                .bubble3 .description span b
+                {
+                    color: yellow;
+                }
+
+                .bubble4
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble4::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid rgb(48, 45, 45);
+                    transform: rotate(-31deg);
+                    margin: 15em 0 0 1.49em;
+                    opacity: .95;
+
+                }
+                .bubble4 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    z-index: 3;
+                    margin: 0  0 0 4em;
+                    display: flex;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 38vh;
+                    width: 38vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble4 .description span 
+                {
+                    z-index: 3;
+                    opacity: 1;
+                }
+                .bubble4 .description span b
+                {
+                    color: yellow;
+                }
+
+                .bubble5
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble5::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid rgb(48, 45, 45);
+                    transform: rotate(44deg);
+                    margin: 9.7em 0 0 0em;
+                    opacity: .95;
+
+                }
+                .bubble5 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    display: flex;
+                    margin: 10em 0 0 1em;
+                    z-index: 3;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 43vh;
+                    width: 43vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble5 .description span 
+                {
+                    z-index: 3;
+                    opacity: 1;
+                }
+                .bubble5 .description span b
+                {
+                    color: yellow;
+                }
+
+                .bubble6
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble6::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid rgb(48, 45, 45);
+                    transform: rotate(55deg);
+                    margin: 4.1em 0 0 -2em;
+                    opacity: .95;
+                }
+                .bubble6 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    margin: 6em 0 0 -3em;
+                    z-index: 3;
+                    display: flex;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 43vh;
+                    width: 43vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble6 .description span 
+                {
+                    z-index: 2;
+                    opacity: 1;
+                }
+                .bubble6 .description span b
+                {
+                    color: yellow;
+                }
+
+                .bubble7
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble7::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid rgb(48, 45, 45);
+                    transform: rotate(49deg);
+                    margin: 11em 0 0 -4px;
+                    opacity: .85;
+
+                }
+                .bubble7 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    margin: 12em 0 0 0;
+                    z-index: 3;
+                    display: flex;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 43vh;
+                    width: 43vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble7 .description span 
+                {
+                    z-index: 2;
+                    opacity: 1;
+                }
+                .bubble7 .description span b
+                {
+                    color: yellow;
+                }
+
+                .bubble8
+                {
+                    display: none;
+                    padding: 12em 0;
+                }
+                .bubble8::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 75px solid rgb(48, 45, 45);
+                    transform: rotate(116deg);
+                    margin: 5.1em 0 0 -7em;
+                    opacity: .85;
+
+                }
+                .bubble8 .description
+                {
+                    background-color: rgb(48, 45, 45) ;
+                    opacity: .95;
+                    border-radius: 50%;
+                    margin: 8em 0 0 -20em;
+                    z-index: 3;
+                    display: flex;
+                    /* align-items: center; */
+                    position: absolute;
+                    text-align: center;
+                    font-size: 1em;
+                    color: white;
+                    box-sizing: border-box;
+                    padding: 10em 12.5vh;
+                    height: 43vh;
+                    width: 43vh;
+                    align-items: center;
+                    justify-content: center;
+                    /* align-content: flex-start; */
+                }
+                .bubble8 .description span 
+                {
+                    z-index: 2;
+                    opacity: 1;
+                }
+                .bubble8 .description span b
+                {
+                    color: yellow;
+                }
+        }
+    }
+}
+
+@keyframes bulb1
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 4em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 10em 0 0 0 ;
+    }
+}
+@keyframes bulb2
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 10em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 20em 0 0 0 ;
+    }
+}
+@keyframes bulb3
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 5em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 12em 0 0 0 ;
+    }
+}
+@keyframes bulb4
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 12em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 25em 0 0 0 ;
+    }
+}
+@keyframes bulb5
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 9em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 19em 0 0 0 ;
+    }
+}
+@keyframes bulb6
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 5em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 10em 0 0 0 ;
+    }
+}
+@keyframes bulb7
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 9em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 19em 0 0 0 ;
+    }
+}
+@keyframes bulb8
+{
+    0%
+    {
+        padding: 0 ;
+    }
+    50%
+    {
+        padding: 5em 0 0 0 ;
+    }
+    100%
+    {
+        padding: 10em 0 0 0 ;
+    }
+}
+.field:hover {
+    display: block;
+    animation: swing 4s linear infinite ;
+    transform-origin: 20px -10px;
+  }
+  
+//   @keyframes swing {
+//         0%{transform: rotate(5deg);}
+//         50%{transform: rotate(-5deg)}
+//         100%{transform: rotate(5deg);}
+//   }
+  @keyframes swing { 
+    20% { transform: rotate(2deg); } 
+    40% { transform: rotate(-2deg); } 
+    60% { transform: rotate(2deg); } 
+    80% { transform: rotate(-2deg); } 
+    100% { transform: rotate(0deg); } 
+ }
+
+    
+//  wire glow
+//  glow range 
+
+    

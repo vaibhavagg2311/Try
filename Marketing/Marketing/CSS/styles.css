@@ -1,0 +1,470 @@
+    * {
+    box-sizing: border-box;
+    }
+
+    body {
+    background-color: #F3D308;
+    }
+
+    /* The form */    
+    #regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    }
+
+    h4{
+    font-size: 20px;
+    color: #858585;
+    margin: 30px 0;
+    font-style: italic;
+    line-height: 16px;
+    }
+
+    input {
+    width: 100%;
+    font-size: 15px;
+    font-family: Raleway;
+    border: 1px solid #13658e;
+    }
+
+    .input-page1{
+    width: 100%;
+    font-size: 15px;
+    font-family: Raleway;
+    background-color: #d9e7ee;
+    height: 120px;
+    margin:0px 0px 25px 0px;
+    font-weight: 600;
+    }
+
+    input.invalid {
+    background-color: #ffdddd;
+    }
+
+    .tab {
+    display: none;
+    }
+
+    button {
+    background-color: #4625bd;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    }
+
+    button:hover {
+    opacity: 0.8;
+    }
+
+    #prevBtn {
+    background-color: #179288;
+    }
+
+
+    /* Indicator at the bottom */
+
+    .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffdf52;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+    }
+
+    .step.active {
+    opacity: 1;
+    }
+
+    .step.finish {
+    background-color: green;
+    }
+
+    /* Stylizing Campaign Details Page */
+
+    /* Drop Down for the Campaign Details Page Type of Influencers*/
+    .dropdown-check-list1 {
+    display: inline-block;
+    }
+    .dropdown-check-list1 .anchor1 {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border-bottom:  1px solid #888888;
+    font-family: sans-serif;
+    font-size: 19px;
+    /*background-color: rgba(0,0,0,0);*/
+    color: grey;
+    width: 80%;
+    }
+    .dropdown-check-list1 .anchor1:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    }
+    .dropdown-check-list1 .anchor1:active:after {
+    right: 8px;
+    top: 21%;
+    }
+    .dropdown-check-list1 ul.items1 {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 80%;
+    }
+    .dropdown-check-list1 ul.items1 li {
+    cursor: pointer;
+    list-style: none;
+    color: lightgrey;
+    }
+    .dropdown-check-list1.visible1 .anchor1 {
+    color: #0094ff;
+    }
+    .dropdown-check-list1:hover ul {
+    display: block;
+    }
+    .dropdown-check-list1:focus{
+    outline: none;
+    }
+
+    .checkBoxes:focus{
+        outline: none;
+    }
+
+    #selectedItem{
+        background-color: white;
+    }
+
+    .inserted{
+        background-color: #377a9f;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+
+    /* Drop Down for the Campaign Details Page for Target Audience */
+
+    .dropdown-check-list2 {
+    display: inline-block;
+    }
+    .dropdown-check-list2 .anchor2 {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border-bottom:  1px solid #888888;
+    font-family: sans-serif;
+    font-size: 19px;
+    /*background-color: rgba(0,0,0,0);*/
+    color: grey;
+    width: 80%;
+    }
+    .dropdown-check-list2 .anchor2:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    }
+    .dropdown-check-list2 .anchor2:active:after {
+    right: 8px;
+    top: 21%;
+    }
+    .dropdown-check-list2 ul.items2 {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 80%;
+    }
+    .dropdown-check-list2 ul.items2 li {
+    list-style: none;
+    }
+    .dropdown-check-list2.visible2 .anchor2 {
+    color: #0094ff;
+    }
+    .dropdown-check-list2:hover ul {
+    display: block;
+    }
+    .dropdown-check-list2:focus{
+    outline: none;
+    }
+
+    .targetBox{
+        outline: none;
+    }
+
+    .insertedTargets{
+        background-color: #377a9f;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20px;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    /* Editing inputs  */
+
+    .inputTags{
+    font-size: large;
+    font-family: sans-serif;
+    margin: 20px;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    }
+
+    .inputTags:focus{
+    outline: none;
+    }
+
+    textarea{
+    width: 85%;
+    border:1px solid lightgrey;
+    border-radius: 20px;
+    }
+
+    textarea:focus{
+    outline: none;
+    }
+
+    .sans-serif{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #666161;
+    }
+
+    .m-20{
+    margin-left: 20px;
+    }
+    .reward{
+    font-weight: bold;
+    font-size: 17px;
+    color: #12648e;
+    }
+
+    .reward-input{
+    /*width: 35%;*/
+    text-align: center;
+    font-family: Lucida, sans-serif;;
+    font-weight: 400;
+    background-color: #e9f1f5;
+    padding: 17px 0px;
+    }
+
+
+
+    /* Last Page */
+    .contact-form{
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 40px;
+    margin-top: 60px;
+    }
+    .icon{
+    margin-right: 0px;
+    font-size: 25px;
+    color: #11648e;
+    }
+    .form-input{
+    font-size: large;
+    margin: 10px;
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    background-color:white;
+    }
+    .form-input:focus{
+    border-bottom: 2px solid blue;
+    outline: none;
+    }
+
+    #budget{
+    color: lightgrey;
+    font-size: 18px;
+    background-color: white;
+    /*font-family: sans-serif;*/
+    /*padding: 10px;*/
+    height: 25px;
+    width: 85%;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    }
+
+    option[value=""][disabled] {
+    display: none;
+    }
+
+    #budget:focus{
+    outline: none;
+    }
+
+
+    /*Headings*/
+
+    .heading1{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    color: #000;
+    margin: 0 0 20px 0;
+    text-align:left;
+
+    }
+
+    .heading2{
+    font-size: 21px;
+    color: #bac2c0;
+    font-family: Roboto-Light;
+    font-weight: 600;
+    }
+
+    .flex{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+
+    .container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+    .container1 div{
+    text-align: center;
+    width: 22%;
+    border: 1px solid lightgrey;
+    background: white;
+    }
+
+    .fontstyle1{
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color:black;
+    font-size: 14px;
+    }
+
+    .fontstyle2{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #858585;
+    font-weight: bolder;
+    }
+
+    .review-font{
+    font-weight: 600;
+    font-size: 15px;
+    color: #8c8c8c;
+    }
+
+    .detail-font{
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+    /* SOCIAL MEDIA ICONS */
+    .social-media {
+    background-color: none;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: none;
+    }
+
+    .container-social{
+    height: 300px;
+    width: 100%;
+    background-color: transparent;
+    margin-left: -15px; 
+    }
+
+    .container-social >div{
+    height: 150px;
+    width: 100%;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    }
+
+    .container-social  ul li{
+    display: inline-block;
+    list-style: none;
+    }
+
+    .container-social ul li img {
+        height: 85px;
+        width: 85px;
+    border-radius: 50%;
+    }
+
+    .one{
+    background-color:white;
+    }
+
+    .two{
+    background-color: white;
+    }
+
+    /* Social media icons default filter */
+    .display{
+    filter: grayscale(100%);
+    }
+
+    /*Save Button*/
+    #saveBtn {
+    background-color:#165674;
+    margin-left: 5%;
+    width: 180px;
+    }
