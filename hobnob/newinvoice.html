@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/newinvoice.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font-Awesome -->
+    <!-- <script src="https://kit.fontawesome.com/4e9a685ceb.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+        media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+        media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">  
+          <div id="images">
+                <div>
+                    <p><label for="logo" style="cursor: pointer;" class="btn btn-info">Upload Logo</label></p>                
+                    <input type='file' accept="image/*" name="logoimage" id="logo" style="display:none">    
+                </div>
+                <div>
+                    <p><label for="signature" style="cursor: pointer;" class="btn btn-info">Upload Signature</label></p>                
+                    <input type='file' accept="image/*" name="signatureimage" id="signature"  style="display:none">
+                </div>               
+                
+            </div>
+               
+        <form class="needs-validation my-3" id="downloadForm">
+            <div id="snackbar">Please fill are the required details</div>
+            <h3>Enter your details</h3>
+            
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="name">Name*</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name" required>                    
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="number">Contact Number*</label>
+                    <input type="number" class="form-control" id="inputNumber" placeholder="Number" required>                    
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="address">Address*</label>
+                    <textarea class="form-control" placeholder="Address" id="inputAddress" required></textarea>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="email">Email*</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email ID" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label for="gstinNum">GSTIN Number*</label>
+                    <input type="text" class="form-control" id="inputGstinNum" placeholder="GstIn number"
+                        maxlength="14" required>                    
+                </div>
+                <!-- <div class="col-md-2 mb-3">
+                    <label for="date">Date*</label>
+                    <input type="date" id="inputDate" class="form-control" required>
+                </div> -->
+                <div class="col-md-2 mb-3">
+                    <label>Invoice*</label>
+                    <input type="text" class="form-control" id="inputInvoice" placeholder="Invoice no" required>
+                </div>
+
+            </div>
+            <h3>Enter your service</h3>
+            <div id="serviceDetails">
+                <div class="form-row serviceInputs">
+                    <div class="col-md-6 mb-3">
+                        <label for="description">Description*</label>
+                        <input type="text" class="form-control description" id="description" required>
+                    </div>
+
+                    
+
+                    <div class="col-md-2 mb-3" style="margin-left: 10px;">
+                        <label for="price">Total Amount*</label>
+                        <input type="number" class="form-control price" id="price" required>
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                    <label class ="gst" for="gst">Choose GST*</label>
+
+                    <select  name="gst" id="gst" required>
+                    <option value="1.05" index= "0">5%</option>
+                    <option value="1.12" index= "1">12%</option>
+                    <option value="1.18" index="2">18%</option>
+                    <option value="1.28" index="3">28%</option>
+                    </select >
+                </div>
+
+                   <div class="col-md-2 mb-3">
+                        <label>Add</label>
+                        <br>
+                        <button type="button" name="add" class="btn btn-success"><i
+                                class="fas fa-plus-circle"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Enter Your party details</h3>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="partyName">Company Name*</label>
+                    <input type="text" class="form-control" id="partyName" placeholder="Name" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="partyNumber">Contact Number*</label>
+                    <input type="number" class="form-control" id="partyNumber" placeholder="Number" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="partyGstin">GSTIN Number*</label>
+                    <input type="text" class="form-control" id="partyGstin" placeholder="GstIn number"
+                        maxlength="14" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid gstin number.
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="partyAdd">Address*</label>
+                    <textarea class="form-control" placeholder="Address" id="partyAdd" required></textarea>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="partyEmail">Email*</label>
+                    <input type="email" class="form-control" id="partyEmail" placeholder="Email ID" required>
+                </div>               
+            </div>
+            <h3>Enter your bank details</h3>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="bankName">Bank Name*</label>
+                    <input type="text" class="form-control" id="bankName" placeholder="Bank name" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="bankBranch">Bank Branch*</label>
+                    <input type="text" class="form-control" id="bankBranch" placeholder="Branch" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="bankAcc">Account Number*</label>
+                    <input type="number" class="form-control" id="bankAcc" placeholder="Account no" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="bankCode">IFSC Code*</label>
+                    <input type="text" class="form-control" id="bankCode" placeholder="Ifsc code" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+            
+        </form>
+        <div class="invoice my-3">
+            <h3>Invoice</h3>
+            <div class="details">
+                   <span style="position:absolute; top:1180px;" id="logoOutput"></span>
+                <div style="text-align: center; margin-top:5px;margin-bottom: 5px;">
+                    
+                    <h4 id="userName">Name:</h4>
+                    <h6 id="userAddress">Address:</h6> 
+                    <h6 id="userGst">GstIn:</h6>
+                </span>
+                    <div>
+                        <span id="userTel">Tel:</span>
+                        <span id="userEmail">E-mail:</span>
+                    </div>
+                </div>
+                <div class="invoiceDetails">
+                    <span>
+                        <p id="userInvoice">Invoice No:</p>
+                        <p id="userDate">Date of Invoice:</p>
+                    </span>
+                    <span style="border-left: 1px solid grey;">
+                        <p style="font-weight:600;">Billed To:</p>
+                        <p id="billTo"></p>                        
+                        <p id="addTo"></p>
+                        <p id="numberTo">Party Mobile no:</p>
+                        <p id="gstTo">GSTIN/UIN:</p>
+                    </span>
+                </div>
+                <div class="invoiceBox"></div>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="padding-left:130px;" scope="col">SNo.</th>
+                        <th style="padding-left:145px;"scope="col">Description</th>
+                        <th scope="col">Price</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr class="tableCreated">
+                        <th scope="row">1</th>
+                        <td class="finalDescription"></td>
+                        <td class="finalPrice"></td>
+                        
+                    </tr>
+                
+                </tbody>
+            </table>
+            <div class="totals">
+            <div class="total">
+                <b>SubTotal:</b><p style ="display: inline-block;"id="sum"></p>
+                <br>
+            </div>
+
+
+             <div class="total">
+                <b>Tax:</b><p style ="display: inline-block;" id="totTax"></p>
+                <br>
+            </div>
+
+
+            <div class="total">
+                <b>Total:</b><p style ="display: inline-block;" id="printwithtax"></p>
+              
+            </div>
+            </div>
+            
+
+            <div class="bankDetails">                
+                <b>Bank Details:</b>
+                <div id="nameAndBranch"> Bank name and Branch:</div>
+                <div id="accountNo">Account no:</div>
+                <div id="ifscCode">IFSC code:</div>
+            </div>
+            <div id="signatureOutput">
+                <p>Authorised by:</p>
+                <br>
+                <br>
+                <p style="text-align:center">Managed by HOBNOB</p>
+                </div>          
+            
+        </div>
+         <span id="taxsum" style ="visibility: hidden;" ></span>
+    </div>
+
+
+   
+
+    <button style="cursor: pointer;  text-align: center;margin-left:46%;margin-bottom: 5%;" class="btn btn-info">Generate PDF</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+
+    <!-- Optional JavaScript -->
+    <script src="js/newinvoice.js"></script>
+    <script src="js/numTowords.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ 
+</body>
+
+</html>
